@@ -46,7 +46,7 @@ ___
                 
    <p style="font-size: 20px"><strong>TEAMS</strong></p>
    
-   <a href="https://github.com/Biyoons">Biyons ...</a>            
+   <a href="https://github.com/Biyoons">Aslihan OZBILENLER</a>            
    
    <a href="https://github.com/EfeIbrhm">Ibrahim EFE</a>
               
@@ -60,7 +60,7 @@ ___
                
    <a href="https://github.com/mehmetceliklv">Mehmet CELIK</a>
                 
-   <a href="https://github.com/Nihat2544">Nihat ...</a>
+   <a href="https://github.com/Nihat2544">Nihat KIZILKULA</a>
                 
    <a href="https://github.com/okabdullahss">Abdullah OK</a>
               
