@@ -20,7 +20,6 @@ Feature: Bitirme Projesi
    And    Doctor Acilan Sayfada View Results'a tiklar
    And    Acilan Sayfada Secilen Test Turlerin gorur
 
-
  Scenario: US_013 Tc_002 Doktor "Request Impatient" (hastanın yatılı tedavi görmesi) isteğinde bulunabilmelidi
 
    And     MYPAGES'e tiklar
