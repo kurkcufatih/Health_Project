@@ -27,5 +27,7 @@ Feature: Bitirme Projesi
     And  MyInpatients'e tiklar
     And  Acilan sayfada hastayı bulur Edit'e tiklar
     And  oda buttonuna tiklar
+    And  "544" secer
+    And  Save buttonuna tiklar
     And  odanin durumunu güncelleye biliyor
     And  Sayfayi kapatir

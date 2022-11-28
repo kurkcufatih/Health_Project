@@ -70,7 +70,7 @@ public class NhtPage {
     @FindBy(xpath = "//*[@class='jh-card card' ]")
     public WebElement BilgilerGorunur;
 
-    @FindBy(xpath = "(//*[@class='d-none d-md-inline'])[2]")
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-pencil-alt fa-w-16 ']")
     public WebElement HastaEditButton;
 
     @FindBy(xpath = "//*[@id='in-patient-status']")
@@ -162,5 +162,14 @@ public class NhtPage {
 
     @FindBy(xpath = "//*[@class='d-none d-md-inline']")
     public WebElement SilmeButtonu;
+
+    @FindBy(xpath = "//*[@id='fromDate']")
+    public WebElement BaslangicTarihi;
+
+    @FindBy(xpath = "//*[@id='toDate']")
+    public WebElement BitisTarihi;
+
+    @FindBy(xpath = "//*[@id='in-patient-room']")
+    public WebElement OdaSecim;
 
 }

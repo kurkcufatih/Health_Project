@@ -24,10 +24,10 @@ Feature: Bitirme Projesi
     And  Acilan sayfada Items&Titles'e tiklar
     And  Patient'e Tiklar
     And  Acilan sayfada Create a new Patient(Yeni Hasta olustur) buttonun tiklar
-    And  Firstname "Ahmet" girer
-    And  Lastname "CAN" girer
+    And  Firstname  girer
+    And  Lastname  girer
     And  Birt Date "20.05.1990" girer
-    And  Email "sn@gmail.com" girer
+    And  Email  girer
     And  Phone "1234567890" girer
     And  Cinsiyet "MALE" girer
     And  Kan grubu "0-" girer

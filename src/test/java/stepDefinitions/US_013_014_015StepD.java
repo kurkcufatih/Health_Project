@@ -127,6 +127,7 @@ public class US_013_014_015StepD {
 
     @And("Acilan sayfada hastayı bulur Edit'e tiklar")
     public void acilanSayfadaHastayıBulurEditETiklar() {
+       // js.executeScript("arguments[0],click()",nht.HastaEditButton);
         nht.HastaEditButton.click();
     }
 
@@ -180,25 +181,9 @@ public class US_013_014_015StepD {
         nht.HastaBilgileri.isDisplayed();
     }
 
-    @And("Firstname {string} girer")
-    public void firstnameGirer(String firstname) {
-       nht.FirstName.sendKeys(firstname);
-
-    }
-
-    @And("Lastname {string} girer")
-    public void lastnameGirer(String lastname) {
-        nht.LastName.sendKeys(lastname);
-    }
-
     @And("Birt Date {string} girer")
     public void birtDateGirer(String tarih) {
         nht.BirthDate.sendKeys(tarih);
-    }
-
-    @And("Email {string} girer")
-    public void emailGirer(String email) {
-        nht.Email.sendKeys(email);
     }
 
     @And("Phone {string} girer")
@@ -239,7 +224,7 @@ public class US_013_014_015StepD {
     @And("Save buttonuna tiklar")
     public void saveButtonunaTiklar() {
         js.executeScript("arguments[0].click();",nht.SaveYeniHastaButtonu);
-        nht.SaveYeniHastaButtonu.click();
+       // nht.SaveYeniHastaButtonu.click();
     }
 
     @And("Apointment'e Tiklar")
@@ -248,16 +233,19 @@ public class US_013_014_015StepD {
 
     @And("Acilan sayfada Create a new Appointment'e\\(Yeni Hasta olustur) buttonun tiklar")
     public void acilanSayfadaCreateANewAppointmentEYeniHastaOlusturButtonunTiklar() {
+
         nht.ApointmentsButton.click();
     }
 
     @And("Sayfada Hastaya doktor atama kısmı yoktur")
     public void sayfadaHastayaDoktorAtamaKısmıYoktur() {
+
         nht.DoktorAtamaButtonu.isDisplayed();
     }
 
     @And("Country buttonuna tiklar")
     public void countryButtonunaTiklar() {
+
         nht.CountryButton.click();
     }
 
@@ -302,5 +290,36 @@ public class US_013_014_015StepD {
         nht.SilmeButtonu.isDisplayed();
     }
 
-    
+
+    @And("Firstname  girer")
+    public void firstnameGirer() {
+        nht.FirstName.click();
+        actions.sendKeys(faker.name().firstName()).perform();
+    }
+    @Then("Lastname  girer")
+    public void lastname_girer() {
+        nht.LastName.click();
+        actions.sendKeys(faker.name().lastName()).perform();
+    }
+
+    @Then("Email  girer")
+    public void email_girer() {
+        nht.Email.click();
+        actions.sendKeys(faker.internet().emailAddress()).perform();
+    }
+    @And("Baslangic Tarihini {string} girer")
+    public void baslangicTarihiniGirer(String baslangic) {
+        nht.BaslangicTarihi.sendKeys(baslangic);
+    }
+
+    @And("Bitis Tarihini {string} girer")
+    public void bitisTarihiniGirer(String bitis) {
+        nht.BitisTarihi.sendKeys(bitis);
+    }
+
+    @And("{string} secer")
+    public void secer(String odaIsmi) {
+        nht.OdaSecim.click();
+        nht.OdaSecim.sendKeys(odaIsmi);
+    }
 }

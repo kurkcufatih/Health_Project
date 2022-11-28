@@ -13,6 +13,8 @@ Feature: Bitirme Projesi
    And    Sign in'e tiklarayak siteye giris yapar
    And    MY PAGES'e tiklar
    And    My Appointments'e tiklar
+   And    Baslangic Tarihini "15.11.2022" girer
+   And    Bitis Tarihini "28.11.2022" girer
    And    Acilan Sayfada Randevu Alan Hastanın Bilgisinin Oldugu Yerdeki Edit'e tiklar
    And    Acilan Sayfada Show Test Results e tiklar
    And    Doctor Acilan Sayfada View Results'a tiklar
@@ -23,6 +25,8 @@ Feature: Bitirme Projesi
 
    And     MYPAGES'e tiklar
    And     MyAppointments'e tiklar
+   And     Baslangic Tarihini "15.11.2022" girer
+   And     Bitis Tarihini "28.11.2022" girer
    And     Acilan Sayfada Randevu Alan Hastanin Bilgisinin Oldugu Yerdeki Edit'e tiklar
    And     Request Inpatient'e tiklar
    And     Yatis islemini tamamlar
