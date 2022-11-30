@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 
         features ="src/test/resources/features",
         glue ="stepDefinitions",
-        tags ="@US006",    //iki tane tag'i calistirmak istersek "@gp1 or @gp2",
+        tags ="@aa",    //iki tane tag'i calistirmak istersek "@gp1 or @gp2",
         dryRun =false   //true yazarsak Driver'i acmadan testleri yapar
 )
 

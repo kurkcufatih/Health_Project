@@ -13,7 +13,7 @@ Feature: Bitirme Projesi
     And   Acilan sayfada Items&Titles'e tiklar
     And   Patient'e Tiklar
     And   Acilan sayfada Create a new Patient(Yeni Hasta olustur) buttonun gorur
-
+@aa
   Scenario: US_015 Tc_002 Yonetici hasta bilgilerini gorur
     And  Acilan sayfada Items&Titles'e tiklar
     And  Patient'e Tiklar
